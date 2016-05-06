@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Numbers 2 Text</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css" />
+    <style type="text/css">
+        body {
+          background-image: url('https://t1.ftcdn.net/jpg/00/92/22/90/160_F_92229005_8Webt4u7e8ecOJMVTgyr5klvAdiWmNwk.jpg');
+          background-repeat: repeat;
+        }
+        body > .grid {
+          height: 100%;
+        }
+        h1 {
+          font-size: 3em;
+          color: black;
+        }
+      </style>
+  </head>
+  <body>
+
+    <div class="ui middle aligned center aligned grid">
+      <div class="column">
+        <div class="ui text container">
+          <div class="ui segments">
+            <div class="ui segment">
+              <!-- <h1>Enter a Number</h1> -->
+              <div class="ui fluid input">
+                <input id="number-input" name="number" type="text" placeholder="Enter a number...">
+              </div>
+              </div>
+              <b>
+              <div id="number-output" class="ui secondary segment left aligned">
+                  Awaiting Input...
+              </div>
+              </b>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/semantic/dist/semantic.min.js"></script>
+    <script src="textual-numbers.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#number-input').keyup(function(event) {
+          try {
+            $('#number-output').text(convertToText($('#number-input').val()));
+          } catch(e) {
+            $('#number-output').text(e.message);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

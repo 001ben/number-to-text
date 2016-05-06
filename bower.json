@@ -1,0 +1,15 @@
+{
+  "name": "numbers-to-text",
+  "description": "Small web app for converting numbers to the textual representation",
+  "main": "index.html",
+  "authors": [
+    "001ben <bufflanky@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "http://numbers2text.benjamentech.com",
+  "private": true,
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "semantic": "semantic-ui#^2.1.8"
+  }
+}

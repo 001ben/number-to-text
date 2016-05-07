@@ -2,7 +2,7 @@
 
 var ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 var teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
-var tens = ['', '', 'twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+var tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
 var significantGroups = ['', 'thousand', 'million', 'billion', 'trillion',
 'quadrillion', 'pentillion', 'quintillion', 'sextillion', 'septillion',
 'octillion', 'nonillion', 'decillion', 'undecillion', 'duodecillion',
